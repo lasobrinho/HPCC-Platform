@@ -24,32 +24,36 @@
 #####################################################
 
 
-project( esphttp ) 
+project(esphttp)
 
-set (    SRCS 
-         ../../bindings/bindutil.cpp 
-         ../../bindings/http/client/httpclient.cpp 
-         ../../bindings/http/platform/htmlpage.cpp 
-         ../../bindings/http/platform/httpbinding.cpp 
-         ../../bindings/http/platform/httpprot.cpp 
-         ../../bindings/http/platform/httpsecurecontext.cpp
-         ../../bindings/http/platform/httpservice.cpp 
-         ../../bindings/http/platform/httptransport.cpp 
-         ../../bindings/http/platform/mime.cpp 
-         ../../bindings/http/platform/msgbuilder.cpp 
-         ../../bindings/SOAP/client/soapclient.cpp 
-         ../../bindings/SOAP/Platform/soapbind.cpp 
-         ../../bindings/SOAP/Platform/soapmessage.cpp 
-         ../../bindings/SOAP/Platform/soapservice.cpp 
-         ../../bindings/SOAP/Platform/soapparam.cpp
-         ../../platform/espcontext.cpp 
-         ../../platform/espprotocol.cpp 
-         ../../platform/espthread.cpp 
-         ../../platform/sechandler.cpp 
-         ../../platform/txsummary.cpp
-         mapinfo.cpp 
-         plugin.cpp 
+set(SRCS
+    ../../bindings/bindutil.cpp
+    ../../bindings/http/client/httpclient.cpp
+    ../../bindings/http/platform/htmlpage.cpp
+    ../../bindings/http/platform/httpbinding.cpp
+    ../../bindings/http/platform/httpprot.cpp
+    ../../bindings/http/platform/httpsecurecontext.cpp
+    ../../bindings/http/platform/httpservice.cpp
+    ../../bindings/http/platform/httptransport.cpp
+    ../../bindings/http/platform/mime.cpp
+    ../../bindings/http/platform/msgbuilder.cpp
+    ../../bindings/SOAP/client/soapclient.cpp
+    ../../bindings/SOAP/Platform/soapbind.cpp
+    ../../bindings/SOAP/Platform/soapmessage.cpp
+    ../../bindings/SOAP/Platform/soapservice.cpp
+    ../../bindings/SOAP/Platform/soapparam.cpp
+    ../../bindings/SOAP/xpp/xjx/xjxpp.cpp
+    ../../platform/espcontext.cpp
+    ../../platform/espprotocol.cpp
+    ../../platform/espthread.cpp
+    ../../platform/espcache.cpp
+    ../../platform/sechandler.cpp
+    ../../platform/txsummary.cpp
+    ../../platform/persistent.cpp
+    mapinfo.cpp
+    plugin.cpp
     )
+
 
 include_directories ( 
          ./../../../system/include 
