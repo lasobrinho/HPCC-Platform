@@ -1,0 +1,24 @@
+
+ESPrequest [nil_remove] DummyAPIRequest
+{
+    string Request;    
+};
+
+ESPresponse [encode(0), nil_remove] DummyAPIResponse
+{
+    string Response;
+};
+
+
+ESPservice [
+    version("1.0"),
+    default_client_version("1.0"),
+    auth_feature("NONE"),
+    http_exceptions_inline("./xslt/exceptions.xslt")] WsQuodGateways
+{
+    ESPmethod [min_ver("1.0")] CallDummyQuodEndpoint(DummyAPIRequest, DummyAPIResponse);
+};
+
+
+SCMexportdef(WsQuodGateways);
+SCMapi(WsQuodGateways) IClientWsQuodGateways *createWsQuodGatewaysClient();
