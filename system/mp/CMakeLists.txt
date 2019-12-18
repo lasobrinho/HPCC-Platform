@@ -46,4 +46,4 @@ target_link_libraries ( mp
          jlib
     )
 
-HPCC_ADD_SUBDIRECTORY(test "PLATFORM")
+# HPCC_ADD_SUBDIRECTORY(test "PLATFORM")

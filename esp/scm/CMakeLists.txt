@@ -27,8 +27,8 @@ project (scm)
 
 set (SCM_BUILD ON)
 include ( ${CMAKE_CURRENT_SOURCE_DIR}/espscm.cmake)
-include ( ${CMAKE_CURRENT_SOURCE_DIR}/smcscm.cmake)
-include ( ${CMAKE_CURRENT_SOURCE_DIR}/additional.cmake)
+# include ( ${CMAKE_CURRENT_SOURCE_DIR}/smcscm.cmake)
+# include ( ${CMAKE_CURRENT_SOURCE_DIR}/additional.cmake)
 set (SCM_BUILD OFF)
 
 ADD_CUSTOM_TARGET( 

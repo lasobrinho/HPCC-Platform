@@ -25,22 +25,22 @@ set ( ESPSCM_GENERATED_DIR ${CMAKE_BINARY_DIR}/generated )
 
 set ( ESPSCM_SRCS
       common.ecm
-      ecl.ecm
-      ecldirect.ecm
-      ecllib.ecm
+      # ecl.ecm
+      # ecldirect.ecm
+      # ecllib.ecm
       esp.ecm
-      ws_access.ecm
+      # ws_access.ecm
       soapesp.ecm
       ws_ecl_client.ecm
-      ws_fs.ecm
-      ws_machine.ecm
-      ws_smc.ecm
-      ws_topology.ecm
-      ws_workunits.ecm
-      ws_packageprocess.ecm
-      ws_esdlconfig.ecm
-      ws_loggingservice.ecm
-      ws_espcontrol.ecm
+      # ws_fs.ecm
+      # ws_machine.ecm
+      # ws_smc.ecm
+      # ws_topology.ecm
+      # ws_workunits.ecm
+      # ws_packageprocess.ecm
+      # ws_esdlconfig.ecm
+      # ws_loggingservice.ecm
+      # ws_espcontrol.ecm
     )
 
 foreach ( loop_var ${ESPSCM_SRCS} )
